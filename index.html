@@ -21,24 +21,30 @@
 
 <body>
 
-  <div id="white"></div>
+<section id="wrapper">
 
-  <div class="cover" id="background">
+  <div id="loader">
     <img src="images/loader.gif">
   </div>
 
-  <div id="credits">
+  <div id="credits" data-speed="0.12">
     <img src="images/credits.png">
   </div>
 
-  <div id="enter">
-    <a href="home.html">
+  <div id="alert" data-speed="0.06">
       <img src="images/enter.png">
     </a>
   </div>
 
+  <div id="enter" data-speed="0.02">
+    <a href="home.html">ENTER
+    </a>
+  </div>
+  </section>
+
   <script src="js/js.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
   <script>
     AOS.init();
   </script>

@@ -25,48 +25,75 @@
     text-decoration: none;
   }
 
-  #background {
+  #wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+  }
+
+  #loader {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 4
   }
 
-  #white{
-    width: 100%;
-    height: 100%;
-    background-color: white;
+  #alert {
+    z-index: 6;
   }
 
-  #credits{
+  #credits {
     position: absolute;
-    top:0%;
-    left:0%;
+    top: 0%;
+    left: 0%;
     max-width: 100px;
+    z-index: 8;
   }
 
-  #credits img{
+  #credits img {
     max-width: 75vh;
   }
 
-  #enter{
+  #alert {
     position: absolute;
-    top:60%;
-    left:60%;
+    top: 40%;
+    left: 60%;
     max-width: 100px;
-    -webkit-animation: pulse 0.2s infinite;
-    animation: pulse 0.2s infinite;
-    cursor:
+    z-index: 10;
   }
 
-  #enter img{
+  #enter {
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 40%;
+    font-family: arial;
+    font-size: 5em;
+    padding: 0.1em;
+    -webkit-animation: pulse 0.2s infinite;
+    animation: pulse 0.2s infinite;
+    z-index: 12;
+  }
+
+  #enter a {
+    color: black !important;
+    text-decoration: none;
+    border: 6px solid black;
+  }
+
+  #alert img {
     max-width: 75vh;
   }
 
   @keyframes pulse {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 
   .sticky {
     position: sticky;
@@ -90,7 +117,7 @@
   }
 
   #did1 {
-    max-height: 30vh;
+    justify-content: flex-start;
     max-width: 30vh;
     top: 55vh;
   }
